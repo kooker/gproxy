@@ -14,7 +14,8 @@ const urlPatterns = [
   /^(?:https?:\/\/)?github\.com\/[^/]+\/[^/]+\/(?:releases|archive)\/.*$/i,
   /^(?:https?:\/\/)?github\.com\/[^/]+\/[^/]+\/(?:blob|raw)\/.*$/i,
   /^(?:https?:\/\/)?github\.com\/[^/]+\/[^/]+\/(?:info|git-).*$/i,
-  /^(?:https?:\/\/)?raw\.(?:githubusercontent|github)\.com\/[^/]+\/[^/]+\/[^/]+\/.+$/i,
+  // 修改这里，允许 raw URL 包含多于 4 个路径段
+  /^(?:https?:\/\/)?raw\.(?:githubusercontent|github)\.com\/[^/]+\/[^/]+\/.+$/i,
   /^(?:https?:\/\/)?gist\.(?:githubusercontent|github)\.com\/[^/]+\/[^/]+\/.+$/i,
   /^(?:https?:\/\/)?github\.com\/[^/]+\/[^/]+\/tags.*$/i
 ];
